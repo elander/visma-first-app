@@ -1,2 +1,9 @@
-<h1>This is my first Angular application!</h1>
-<app-test>This should not be visible in the app</app-test>
+<h1>This is my first Angular application, called {{ title }}!</h1>
+<h2>My Favorite Books</h2>
+<ul>
+  <app-list-favorites *ngFor="let book of favBooks" [bookObject]="book">
+  </app-list-favorites>
+</ul>
+
+<button (click)="onClick()">Click Me!</button>
+<app-test *ngIf="isVisible">This should not be visible in the app</app-test>
