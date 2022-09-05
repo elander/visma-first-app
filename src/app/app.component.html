@@ -4,6 +4,8 @@
   <app-list-favorites *ngFor="let book of favBooks" [bookObject]="book">
   </app-list-favorites>
 </ul>
+<app-input-book (newBookEvent)="addBook($event)"></app-input-book>
+<br /><br />
 
 <button (click)="onClick()">Click Me!</button>
 <app-test *ngIf="isVisible">This should not be visible in the app</app-test>

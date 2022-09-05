@@ -1,0 +1,11 @@
+<h2>Add a new title:</h2>
+<div>
+  <label for="titleField">Write a title</label>
+  <input
+    type="text"
+    name="titleField"
+    placeholder="Write a title"
+    [(ngModel)]="bookTitle"
+  />
+  <button (click)="onAddBook()">Add title</button>
+</div>

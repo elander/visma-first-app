@@ -14,6 +14,10 @@ export class AppComponent {
     {title: "Thinkertoys"},
   ];
 
+  addBook(newBook: {title: string}) {
+    this.favBooks = this.favBooks.concat(newBook);
+    console.log('book added in app component', newBook.title);
+  }
 
   onClick() {
     this.isVisible = !this.isVisible;
